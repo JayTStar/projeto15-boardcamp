@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import connection from "../data";
+import connection from "../data.js";
 
 export async function getCategories(req,res){
     try {
