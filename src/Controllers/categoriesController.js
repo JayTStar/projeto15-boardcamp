@@ -1,7 +1,7 @@
 import chalk from "chalk";
 import connection from "../data";
 
-export function getCategories(req,res){
+export async function getCategories(req,res){
     try {
         const request = await connection.query("SELECT * FROM categories");
         res.status(200).send(request.rows);
