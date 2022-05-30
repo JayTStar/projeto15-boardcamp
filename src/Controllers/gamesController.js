@@ -1,4 +1,4 @@
-import connection from "../data";
+import connection from "../data.js";
 import chalk from "chalk";
 
 export async function getGames(req,res){
