@@ -12,7 +12,7 @@ export async function getCategories(req,res){
     }
 }
 
-export function postCategories(req,res){
+export async function postCategories(req,res){
     try {
         const request = await connection.query(
             `SELECT * 
