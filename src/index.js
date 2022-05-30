@@ -19,6 +19,4 @@ app.use(gamesRouter);
 app.use(clientsRouter);
 app.use(rentRouter);
 
-const porta = process.env.PORT || 4000;
-
-app.listen(porta, ()=> console.log(chalk.blue(`Servidor criado na porta ${porta}`)));
+app.listen(process.env.PORT, ()=> console.log(chalk.blue(`Servidor criado na porta ${process.env.PORT}`)));
